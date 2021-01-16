@@ -1,5 +1,4 @@
 # DADOS -------------------------------------------------------------------
-setwd('/home/matheus/Dropbox/TCC_R/dados/')
 library(ggplot2); library(reshape2)
 list.files()
 dados = read.csv('dados.csv')
