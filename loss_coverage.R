@@ -1,7 +1,5 @@
 # PREPARACAO DE DADOS -----------------------------------------------------
-setwd('/home/matheus/Dropbox/TCC_R/dados/')
 library(ggplot2); library(reshape2); library(gridExtra);library(xtable)
-list.files()
 prop = read.csv('proporcoes.csv', sep = ';', dec = ',', header = T)
 pop_brasil_idade_simples = read.csv('pop_idade_simples.csv', sep = ';'); pop_brasil_idade_simples = pop_brasil_idade_simples[,names(pop_brasil_idade_simples) %in% c('IDADE','X2003','X2017')] 
 pop_brasil_idade_simples$IDADE = as.character(pop_brasil_idade_simples$IDADE); pop_brasil_idade_simples$IDADE[nrow(pop_brasil_idade_simples)] = 90
